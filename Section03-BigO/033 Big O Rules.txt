@@ -1,0 +1,4 @@
+01 Worst Case --- Big O is all about the worst case secanario
+02 Remove Constants
+03 Different terms for Inputs
+04 Drop Non-Dominants
