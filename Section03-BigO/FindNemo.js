@@ -10,6 +10,7 @@ function findNemo(array){
     if(array[i] === 'Nemo'){
       console.log("Found Nemo!!!");
     }
+
   }
   //let t1 = performance.now();
   //console.log("Found Nemo in " + (t1-t0) + " milliseconds.");
