@@ -1,0 +1,13 @@
+Stacks:
+
+LIFO
+
+The pop operation visits the top element of a stack, but it permanently removes the element from a stack.
+The peek operation returns the value stored at the top of a stack without removing it from the stack.
+
+Queues:
+
+FIFO
+
+enqueue, add in Queue at the last --> push for Stack
+dequeue, remove the first from Queue --> pop for Stack
