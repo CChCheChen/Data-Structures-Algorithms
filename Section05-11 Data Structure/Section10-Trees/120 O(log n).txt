@@ -1,0 +1,36 @@
+Level 0 Nodes: 2^0 = 1;
+Level 1 Nodes: 2^1 = 2;
+Level 2 Nodes: 2^2 = 4;
+... ...
+
+With the facts for Perfect Binary Tree, that
+1. # of Nodes of Level N = 2 * (# of Nodes of Level N-1)
+2. # of Nodes of Level N = (# of Nodes of All previous Levels) + 1
+
+# of Nodes in Binary Tree (0 Level - Height of 1)
+= # of Nodes in Level 1 - 1
+= 2^1 - 1
+= 1
+
+# of Nodes in Binary Tree (1 Level - Height of 2)
+= # of Nodes in Level 2 - 1
+= 2^2 - 1
+= 3
+
+# of Nodes in Binary Tree (2 Levels - Height of 3)
+= # of Nodes in Level 3 - 1
+= 2^3 - 1
+= 7
+
+... ...
+
+# of Nodes in Binary Tree (N Levels - Height of (N+1))
+= # of Nodes in Level (N+1) - 1
+= 2^(N+1) - 1
+= 2^Height - 1
+
+So (# of Nodes) = 2^Height - 1, remove the non-dominant constant:
+(# of Nodes) = 2^Height
+
+Which results:
+log (# of Nodes) = Height
