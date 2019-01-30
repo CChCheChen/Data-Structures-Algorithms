@@ -1,0 +1,7 @@
+Max Heap: Parent Nodes has larger values than its Child Nodes' values
+          (Boot Node has the largest value)
+
+Min Heap: Parent Nodes has smaller values than its Child Nodes' values
+          (Boot Node has the smallest value)
+
+Heap Data Structure different from Memory Heap!!!!!

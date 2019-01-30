@@ -1,0 +1,30 @@
+AVL Trees:
+https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7
+
+Red Black Trees:
+https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5
+
+For small data:
+
+insert: RB tree & avl tree has constant number of max rotation
+        but RB tree will be faster because on average RB tree use less rotation.
+
+lookup: AVL tree is faster, because AVL tree has less depth.
+
+delete: RB tree has constant number of max rotation but AVL tree can have O(log N) times of rotation as worst.
+        On average RB tree also has less number of rotation thus RB tree is faster.
+
+
+
+for large data:
+
+insert: AVL tree is faster. because you need to lookup for a particular node before insertion.
+        as you have more data the time difference on looking up the particular node grows proportional to O(log N).
+        but AVL tree & RB tree still only need constant number of rotation at the worst case.
+        Thus the bottle neck will become the time you lookup for that particular node.
+
+lookup: AVL tree is faster. (same as in small data case)
+
+delete: AVL tree is faster on average, but in worst case RB tree is faster.
+        because you also need to lookup for a very deep node to swap before removal (similar to the reason of insertion).
+        on average both trees has constant number of rotation. but RB tree has a constant upper bound for rotation.
