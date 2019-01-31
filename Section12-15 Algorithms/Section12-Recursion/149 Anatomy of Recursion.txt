@@ -1,4 +1,19 @@
+Note!!!
+ANYTHING can do with Recursion CAN be done Iteratively!!!
+
+
 1. Identify Base Case, when to stop Recursion
 2. Identify Recursive Case
 3. Get closer and closer to Base Case, then return when needed.
    Usually having 2 returns, 1 for Base Case and 1 for Recursive Case
+
+
+Every time you using a Tree or converting something into a Tree, consider Recursion
+1. Divided into a number of sub-problems which are smaller instances of the same problems
+2. Each instance of the sub-problem is identical in nature
+3. The solutions of each sub-problem can be combined to solve the problem at hand
+
+Divide and Conquer using Recursion
+
+Read：
+https://stackoverflow.com/questions/105838/real-world-examples-of-recursion
