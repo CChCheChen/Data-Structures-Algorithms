@@ -1,0 +1,4 @@
+1. Identify Base Case, when to stop Recursion
+2. Identify Recursive Case
+3. Get closer and closer to Base Case, then return when needed.
+   Usually having 2 returns, 1 for Base Case and 1 for Recursive Case
