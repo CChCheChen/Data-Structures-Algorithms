@@ -11,6 +11,7 @@ function fibonacciRecursive(n) {
 console.log("Regular", fibonacciRecursive(10));
 console.log("Count: " + count + " times");
 
+
 //Time:  O(n)
 //SPace: O(n)
 let countDP = 0;
@@ -33,6 +34,7 @@ function fibonacciDP(){
 const memoizedFib = fibonacciDP();
 console.log("DP ", memoizedFib(100));
 console.log("Count DP: " + countDP + " times");
+
 
 //Bottom Up Approach
 function fibonacciDP2(){
