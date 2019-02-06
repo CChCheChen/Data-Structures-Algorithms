@@ -17,3 +17,20 @@ Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        if(null==prices || prices.length==0 ) return 0;
+
+        int buyPrice = prices[0];
+        int profit = 0;
+
+        for(int i=1; i<prices.length; i++){
+            int sellPrice = prices[i];
+            buyPrice = Math.min(sellPrice, buyPrice);
+            profit = Math.max(sellPrice-buyPrice, profit);
+        }
+
+        return profit;
+    }
+}

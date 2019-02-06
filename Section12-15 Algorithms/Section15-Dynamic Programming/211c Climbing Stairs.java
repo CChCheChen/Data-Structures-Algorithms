@@ -21,3 +21,18 @@ Explanation: There are three ways to climb to the top.
 2. 1 step + 2 steps
 3. 2 steps + 1 step
 */
+
+class Solution {
+    public int climbStairs(int n) {
+        if(n<=3) return n;
+
+        int[] counts = new int[n+1];
+        //int[0] = 0; NO need to assign 0 to int[] which already has DEFAULT value as 0 when created
+        counts[1] = 1;
+        counts[2] = 2;
+        for(int i=3; i<=n; i++){
+            counts[i] = counts[i-1] + counts[i-2];
+        }
+        return counts[n];
+    }
+}

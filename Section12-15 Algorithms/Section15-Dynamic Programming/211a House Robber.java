@@ -15,5 +15,35 @@ Input: [2,7,9,3,1]
 Output: 12
 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
              Total amount you can rob = 2 + 9 + 1 = 12.
-             
+
 */
+
+//Example: [1,3,1,1,5,1,7] should return 15
+class Solution {
+    public int rob(int[] nums) {
+        if(null==nums || nums.length==0) return 0;
+        if(nums.length==1) return nums[0];
+
+        int[] result = new int[nums.length+2];
+
+        //reading the nums array in reverse direction, not changing the resul
+        for(int i=nums.length-1; i>=0; i--){
+            result[i] = Math.max(nums[i] + result[i+2], result[i+1]);
+        }
+        return result[0];
+
+        /*
+        //reading the nums array in regular direction
+        result[0] = nums[0];
+
+        if(nums[0] > nums[1])
+            result[1] = nums[0];
+        else
+            result[1] = nums[1];
+
+        for(int i=2; i<nums.length; i++){
+            result[i] = Math.max(nums[i] + result[i-2], result[i-1]);
+        }
+        return result[nums.length-1];*/
+    }
+}
