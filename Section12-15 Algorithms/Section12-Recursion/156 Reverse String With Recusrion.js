@@ -20,4 +20,4 @@ function reverseStringRecursive(str) {
   }
 }
 
-reverseStringRecursive('WINNI XU');
+reverseStringRecursive('WINNI XU')
