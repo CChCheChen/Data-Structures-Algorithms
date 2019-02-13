@@ -1,4 +1,11 @@
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+/*
+The most direct competitor of quicksort is heapsort.
+Heapsort is typically somewhat slower than quicksort, but the worst-case running time is always Θ(nlogn).
+Quicksort is usually faster, though there remains the chance of worst case performance except in the introsort variant,
+which switches to heapsort when a bad case is detected. 
+If it is known in advance that heapsort is going to be necessary, using it directly will be faster than waiting for introsort to switch to it.
+*/
 
 //It is important to pick a proper pivot
 function quickSort(array, leftIndex, rightIndex){
